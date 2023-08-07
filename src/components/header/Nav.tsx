@@ -2,8 +2,11 @@ import { Link, NavLink } from 'react-router-dom';
 
 import logo from '../../assets/shopping-cart-logo.png';
 import cartImage from '../../assets/shopping-cart.png';
+import { useShoppingCart } from '../../context/ShoppingCartContext';
 
 const Nav = () => {
+  const { openCart, cartQuantity } = useShoppingCart();
+
   return (
     <nav className='h-20 flex flex-col sm:flex-row justify-between items-center bg-white fixed left-0 right-0 top-0 border-solid shadow-sm border-b-2 border-gray-200 px-6 sm:px-8'>
       <ul className='w-1/2 list-none flex items-center font-bold'>
@@ -29,15 +32,17 @@ const Nav = () => {
         </li>
       </ul>
 
-      <button className='relative'>
-        <img src={cartImage} alt='cart' className='w-10' />
-        <span
-          className='flex justify-center items-center w-6 h-6 text-white bg-red-500 rounded-full absolute bottom-0 right-0'
-          style={{ transform: 'translate(25%, 25%)' }}
-        >
-          3
-        </span>
-      </button>
+      {cartQuantity > 0 && (
+        <button onClick={openCart} className='relative'>
+          <img src={cartImage} alt='cart' className='w-10' />
+          <span
+            className='flex justify-center items-center w-6 h-6 text-white bg-red-500 rounded-full absolute bottom-0 right-0'
+            style={{ transform: 'translate(25%, 25%)' }}
+          >
+            {cartQuantity}
+          </span>
+        </button>
+      )}
     </nav>
   );
 };
