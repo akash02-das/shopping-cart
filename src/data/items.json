@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Book",
+    "price": 399,
+    "imgUrl": "/book.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Computer",
+    "price": 95000,
+    "imgUrl": "/computer.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Banana",
+    "price": 42,
+    "imgUrl": "/banana.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Car",
+    "price": 600000,
+    "imgUrl": "/car.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Mango",
+    "price": 120,
+    "imgUrl": "/mango.jpg"
+  },
+  {
+    "id": 6,
+    "name": "iPhone 14 pro",
+    "price": 110000,
+    "imgUrl": "/iphone.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Ipod Classic",
+    "price": 16000,
+    "imgUrl": "/ipod.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Apple Watch",
+    "price": 44000,
+    "imgUrl": "/watch.jpg"
+  }
+]
