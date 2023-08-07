@@ -20,7 +20,7 @@ const ShoppingCart = ({ isOpen }: ShoppingCartProps) => {
     <>
       {isOpen && (
         <div className='fixed inset-0 bg-black bg-opacity-10 backdrop-blur-sm flex justify-center items-center'>
-          <div className='bg-white w-[35%] h-screen top-0 right-0 p-4 shadow-lg absolute z-50'>
+          <div className='bg-white w-[350px] md:w-[560px] h-screen top-0 right-0 p-4 shadow-lg absolute z-50'>
             <div className='flex justify-between items-center mb-10'>
               <h1 className='text-xl text-gray-700 font-bold'>Cart</h1>
               <button onClick={closeCart}>
@@ -34,7 +34,7 @@ const ShoppingCart = ({ isOpen }: ShoppingCartProps) => {
               ))}
             </div>
 
-            <div className='flex justify-end text-2xl text-gray-800 font-medium my-10'>
+            <div className='flex justify-end text-xl md:text-2xl text-gray-800 font-medium my-10'>
               Total:
               <span className='ml-3'>{formatCurrency(totalPrice)}</span>
             </div>

@@ -8,7 +8,7 @@ const Nav = () => {
   const { openCart, cartQuantity } = useShoppingCart();
 
   return (
-    <nav className='h-20 flex flex-col sm:flex-row justify-between items-center bg-white fixed left-0 right-0 top-0 border-solid shadow-sm border-b-2 border-gray-200 px-6 sm:px-8'>
+    <nav className='h-20 flex justify-between items-center bg-white fixed left-0 right-0 top-0 border-solid shadow-sm border-b-2 border-gray-200 px-6 sm:px-8'>
       <ul className='w-1/2 list-none flex items-center font-bold'>
         <li>
           <Link to='/' className='flex justify-center items-center'>
